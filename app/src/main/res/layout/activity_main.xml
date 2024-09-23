@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:padding="16dp"
     android:background="@drawable/app_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +14,7 @@
         android:id="@+id/imageView"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_bias="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,7 @@
         android:textSize="20sp"
         android:padding="13dp"
         android:background="@drawable/rounded_corner"
-        app:layout_constraintVertical_bias="0.6"/>
+        app:layout_constraintVertical_bias="0.5"/>
 
     <EditText
         android:id="@+id/password_input"
@@ -47,7 +48,7 @@
         android:textSize="20sp"
         android:padding="13dp"
         android:background="@drawable/rounded_corner"
-        app:layout_constraintVertical_bias="0.75"/>
+        app:layout_constraintVertical_bias="0.6"/>
 
     <Button
         android:id="@+id/login_btn"
@@ -59,9 +60,36 @@
         android:textColor="#444"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_bias="0.75"
+        android:textStyle="bold"
+        android:textSize="18sp"
         />
 
+    <Button
+        android:id="@+id/create_account_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:textSize="18sp"
+        android:backgroundTint="#c3f584"
+        android:text="Criar Conta"
+        android:textColor="#444"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        />
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.90"
+        android:text="Esqueceu a senha?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

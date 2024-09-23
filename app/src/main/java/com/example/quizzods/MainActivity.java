@@ -1,7 +1,9 @@
 package com.example.quizzods;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -12,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    private Button createAccountBtn;
     private EditText usernameInput;
     private EditText passwordInput;
     private Button loginBtn;
@@ -32,6 +34,23 @@ public class MainActivity extends AppCompatActivity {
                     String password = passwordInput.getText().toString();
                     Log.i("Login", "Username: " + username + ", Password: " + password);
                 });
+
+        createAccountBtn = findViewById(R.id.create_account_btn);
+        createAccountBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                startActivity(intent);
+            }
+        });
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, menuJogo.class);
+                startActivity(intent);
+            }
+        });
 
 
                 ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
