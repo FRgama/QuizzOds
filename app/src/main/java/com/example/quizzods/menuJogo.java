@@ -12,8 +12,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class menuJogo extends AppCompatActivity {
 
-    private Button btnJogar = findViewById(R.id.btnJogar);
-    private Button btnCreditos = findViewById(R.id.btnCreditos);
+    private Button btnJogar;
+    private Button btnCreditos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,19 @@ public class menuJogo extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_menu_jogo);
 
+        btnCreditos = findViewById(R.id.btnCreditos);
+        btnJogar = findViewById(R.id.btnJogar);
+
+
         btnCreditos.setOnClickListener(v -> {
                     Intent intent = new Intent(menuJogo.this, creditos.class);
                     startActivity(intent);
                 });
+
+        btnJogar.setOnClickListener(v -> {
+            Intent intent = new Intent(menuJogo.this, gameplay.class);
+            startActivity(intent);
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

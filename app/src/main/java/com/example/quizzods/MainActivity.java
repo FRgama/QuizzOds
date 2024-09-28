@@ -29,11 +29,11 @@ public class MainActivity extends AppCompatActivity {
         passwordInput = findViewById(R.id.password_input);
         loginBtn = findViewById(R.id.login_btn);
 
-        loginBtn.setOnClickListener(v -> {
+       /* loginBtn.setOnClickListener(v -> {
                     String username = usernameInput.getText().toString();
                     String password = passwordInput.getText().toString();
                     Log.i("Login", "Username: " + username + ", Password: " + password);
-                });
+                }); */
 
         createAccountBtn = findViewById(R.id.create_account_btn);
         createAccountBtn.setOnClickListener(new View.OnClickListener() {

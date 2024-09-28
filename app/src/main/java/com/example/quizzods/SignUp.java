@@ -3,6 +3,7 @@ package com.example.quizzods;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -23,7 +24,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         EditText username = findViewById(R.id.username);
-        MaterialButton btnConta = findViewById(R.id.create_account_btn);
+        Button btnConta = findViewById(R.id.btnCriarConta);
 
         // Listener para o botão de criar conta
         btnConta.setOnClickListener(v -> {

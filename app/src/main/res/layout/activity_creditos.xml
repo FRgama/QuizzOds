@@ -20,78 +20,57 @@
         android:textSize="50dp"
         android:text="CRÉDITOS" />
 
-    <EditText
+    <TextView
         android:id="@+id/participante1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/creditoTitulo"
         android:layout_centerHorizontal="true"
-        android:ems="10"
         android:gravity="center"
-        android:inputType="textMultiLine"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:text="Rodrigo Correa da Gama
-        RA:23025472"
+        android:text="Rodrigo Correa da Gama\nRA:23025472"
+        android:textColor="@color/black"
         android:padding="15dp"
         android:textSize="20dp"
-        android:layout_margin="20dp"
-        />
+        android:layout_margin="20dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/participante2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/participante1"
         android:layout_centerHorizontal="true"
-        android:ems="10"
         android:gravity="center"
-        android:inputType="textMultiLine"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:text="Rafaella Morelli Ezequiel
-        RA:23024902"
-
+        android:text="Rafaella Morelli Ezequiel\nRA:23024902"
+        android:textColor="@color/black"
         android:padding="15dp"
         android:textSize="20dp"
-        android:layout_margin="20dp"
-        />
+        android:layout_margin="20dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/participante3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/participante2"
         android:layout_centerHorizontal="true"
-        android:ems="10"
         android:gravity="center"
-        android:inputType="textMultiLine"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:text="Leonardo Ferreira da Silva
-        RA:23025472"
+        android:text="Leonardo Ferreira da Silva\nRA:23025389"
+        android:textColor="@color/black"
         android:padding="15dp"
         android:textSize="20dp"
-        android:layout_margin="20dp"
-        />
+        android:layout_margin="20dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/participante4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/participante3"
         android:layout_centerHorizontal="true"
-        android:ems="10"
         android:gravity="center"
-        android:inputType="textMultiLine"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
-        android:text="Maria Kassandra Alves Gomes
-        RA:23025405"
+        android:text="Maria Kassandra Alves Gomes\nRA:3025405"
+        android:textColor="@color/black"
         android:padding="15dp"
         android:textSize="20dp"
-        android:layout_margin="20dp"
-        />
+        android:layout_margin="20dp" />
 
     <Button
         android:id="@+id/btnVoltar"

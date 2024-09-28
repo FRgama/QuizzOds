@@ -83,16 +83,18 @@
         android:drawablePadding="20dp"
         />
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/create_account_btn"
-        android:text="Criar Conta"
         android:layout_below="@id/repassword_input"
-        android:layout_centerHorizontal="true"
-        android:backgroundTint="#444"
-        android:layout_margin="15dp"
+        android:textStyle="bold"
         android:textSize="20dp"
+        android:padding="15dp"
+        android:textColor="#444"
+        android:backgroundTint="#c3f584"
+        android:layout_marginTop="40dp"
+        android:text="Criar Conta"
         />
 
 
