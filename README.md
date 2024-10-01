@@ -1,20 +1,66 @@
-<h1>QUIZZODS</h1>
+# FECAP - Fundação de Comércio Álvares Penteado
 
-<p>O app atualmente está em processo de criação.</p>
+<p align="center">
+<a href= "https://www.fecap.br/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
+</p>
 
-<h2>nos ultimos 4 Commits tivemos as respectivas alterações:</h2>
+# Nome do Projeto
 
-<h2>Primeiro Commit</h2>
+## Quizzer
 
-<p>Criação da tela de login e da tela de criar conta</p>
+## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Leonardo Ferreira</a>, <a href="https://www.linkedin.com/in/victorbarq/">Maria Kassandra Alves</a>, <a href="https://www.linkedin.com/in/victorbarq/">Rafaella Morelli</a>, <a href="https://www.linkedin.com/in/victorbarq/">Rodrigo Santos</a>
+## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>
 
-<h2>Segundo Commit</h2>
+## Descrição
 
-<p>Criação das telas de Menu principal, Créditos e inicio da pagina de gameplay(sem layout ou qualquer alteração, apenas uma página em branco). também foi feita a uniao das paginas por meio dos botões de trocar página.</p>
+<p align="center">
+<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="QuizzODS" border="0">
+  App by <a href="http://www.nyphotographic.com/">Quizzer</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+</p>
 
-<h2>Terceiro Commit</h2>
-<p>Criação do layout da página de Gameplay, ainda sem seu código java.</p>
 
-<h2>Quarto Commit</h2>
+<br><br>
+Nosso projeto foca em espalhar o conhecimento sobre os Objetivos de Desenevolvimento Sustentável (ODS) da ONU através de um quiz dinâmico e divertido! Bora jogar 🎮
+<br><br>
 
-<p>Implementação do código java na gameplay, tornando o "jogo jogável", feita também alterações nos textos da página Créditos, junto a ajustes nas chamadas on click das páginas Créditos e Menu</p>
+## 🛠 Estrutura de pastas
+
+-Raiz<br>
+|<br>
+|-->documentos<br>
+  &emsp;|-->antigos<br>
+  &emsp;|Documentação.docx<br>
+|-->executáveis<br>
+  &emsp;|-->windows<br>
+  &emsp;|-->android<br>
+  &emsp;|-->HTML<br>
+|-->imagens<br>
+|-->src<br>
+  &emsp;|-->Backend<br>
+  &emsp;|-->Frontend<br>
+|readme.md<br>
+
+Há 4 pastas que seguem da seguinte forma:
+
+<b>documentos</b>: Toda a documentação estará nesta pasta.
+
+<b>executáveis</b>: Binários e executáveis do projeto devem estar nesta pasta.
+
+<b>imagens</b>: Imagens do sistema
+
+<b>src</b>: Pasta que contém o código fonte.
+
+## 🛠 Instalação
+
+<b>Android:</b>
+
+Faça o Download do JOGO.apk no seu celular.
+Execute o APK e siga as instruções de seu telefone.
+
+## 🎓 Referências
+
+Aqui estão as referências usadas no projeto.
+
+1. <https://github.com/iuricode/readme-template>
+2. <https://github.com/gabrieldejesus/readme-model>
+3. <https://creativecommons.org/share-your-work/>
