@@ -6,9 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/app_background"
-    tools:context=".SignUp"
-
-    >
+    tools:context=".SignUp">
 
     <TextView
         android:id="@+id/criarContaTitulo"
@@ -19,9 +17,8 @@
         android:textStyle="bold"
         android:textColor="@color/white"
         android:gravity="center"
-        android:layout_margin="20dp"
-        />
-    
+        android:layout_margin="20dp" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,9 +31,7 @@
         android:layout_margin="10dp"
         android:padding="20dp"
         android:drawableLeft="@drawable/baseline_person_24"
-        android:drawablePadding="20dp"
-        />
-
+        android:drawablePadding="20dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -50,8 +45,7 @@
         android:layout_margin="10dp"
         android:padding="20dp"
         android:drawableLeft="@drawable/baseline_email_24"
-        android:drawablePadding="20dp"
-        />
+        android:drawablePadding="20dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -65,39 +59,19 @@
         android:layout_margin="10dp"
         android:padding="20dp"
         android:drawableLeft="@drawable/baseline_password_24"
-        android:drawablePadding="20dp"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/repassword_input"
-        android:background="#30ffffff"
-        android:layout_below="@+id/password_input"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:hint="Digite a senha novamente"
-        android:layout_margin="10dp"
-        android:padding="20dp"
-        android:drawableLeft="@drawable/baseline_password_24"
-        android:drawablePadding="20dp"
-        />
+        android:drawablePadding="20dp" />
 
     <Button
         android:id="@+id/btnCriarConta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/repassword_input"
+        android:layout_below="@id/password_input"
         android:textStyle="bold"
         android:textSize="20dp"
         android:padding="15dp"
         android:textColor="#444"
         android:backgroundTint="#c3f584"
         android:layout_marginTop="40dp"
-        android:text="Criar Conta"
-        />
-
+        android:text="Criar Conta" />
 
 </RelativeLayout>
-
-

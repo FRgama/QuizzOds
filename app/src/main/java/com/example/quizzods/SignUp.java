@@ -8,6 +8,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -41,10 +43,12 @@ public class SignUp extends AppCompatActivity {
             this.context = context;
         }
 
+
+
         @Override
         public void onCreate(SQLiteDatabase db) {
             try {
-                db.execSQL("CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, EMAIL TEXT, senha TEXT)");
+                db.execSQL("CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, email TEXT, senha TEXT)");
                 Toast.makeText(context, "Banco de dados criado com sucesso!", Toast.LENGTH_SHORT).show();
             } catch (SQLException e) {
                 Toast.makeText(context, "Erro ao criar o banco de dados: " + e.getMessage(), Toast.LENGTH_LONG).show();
@@ -70,6 +74,7 @@ public class SignUp extends AppCompatActivity {
                 contentValues.put(COL_3, email);
                 contentValues.put(COL_4, senha);
                 long result = db.insert(TABLE_NAME, null, contentValues);
+                Log.d("SQLite", "Inserido: nome: " + username + ", Email: " + email + ", Senha: " + senha);
                 if (result == -1) {
                     throw new SQLException("Erro ao inserir os dados");
                 }
@@ -116,13 +121,18 @@ public class SignUp extends AppCompatActivity {
         EditText senha = findViewById(R.id.password_input);
         Button btnConta = findViewById(R.id.btnCriarConta);
 
+
+
+
         // Configuração do Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://h6wr2f-3000.csb.app/criarUsuario")
+                .baseUrl("https://h6wr2f-3000.csb.app/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
         ApiService apiService = retrofit.create(ApiService.class);
+
+
 
         // Listener para o botão de criar conta
         btnConta.setOnClickListener(v -> {
@@ -137,7 +147,10 @@ public class SignUp extends AppCompatActivity {
             Toast.makeText(SignUp.this, "Seu username é " + usernameText, Toast.LENGTH_SHORT).show();
 
             // Criando a requisição de cadastro
-            UpRequest signUpRequest = new UpRequest(usernameText);
+            UpRequest signUpRequest = new UpRequest(usernameText, emailText, senhaText);
+
+
+
 
             // Fazendo a requisição ao servidor
             Call<UpRequest.SignUpResponse> call = apiService.signUp(signUpRequest);
@@ -154,15 +167,19 @@ public class SignUp extends AppCompatActivity {
                         }
 
                         // Navegando para a MainActivity após o cadastro
-                        Intent intent = new Intent(SignUp.this, MainActivity.class);
+
+                        Intent intent = new Intent(SignUp.this, menuJogo.class);
                         startActivity(intent);
                     } else {
+                        Log.e("API_ERROR", "Erro no cadastro: " + response.code() + " " + response.message());
+
                         Toast.makeText(SignUp.this, "Erro no cadastro: " + response.message(), Toast.LENGTH_SHORT).show();
                     }
                 }
 
                 @Override
                 public void onFailure(Call<UpRequest.SignUpResponse> call, Throwable t) {
+                    Log.e("NETWORK_ERROR", "Erro de rede: " + t.getMessage(), t);
                     Toast.makeText(SignUp.this, "Erro de rede: " + t.getMessage(), Toast.LENGTH_SHORT).show();
                 }
             });

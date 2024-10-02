@@ -9,11 +9,9 @@ import retrofit2.http.POST;
 
 // interface para serviço de API
 public interface ApiService {
-    @POST("https://h6wr2f-3000.csb.app/criarUsuario")
-    
-    Call<UpRequest.SignUpResponse> singUp(@Body UpRequest request);
+    @POST("/criarUsuario")
 
-    Call<UpRequest.SignUpResponse> signUp(UpRequest signUpRequest);
+    Call<UpRequest.SignUpResponse> signUp(@Body UpRequest signUpRequest);
 }
 
 
