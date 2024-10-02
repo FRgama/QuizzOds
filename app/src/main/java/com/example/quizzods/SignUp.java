@@ -118,7 +118,7 @@ public class SignUp extends AppCompatActivity {
 
         // Configuração do Retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://h6wr2f-3000.csb.app/")
+                .baseUrl("https://h6wr2f-3000.csb.app/criarUsuario")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
