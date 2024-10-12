@@ -193,6 +193,7 @@ public class SignUp extends AppCompatActivity {
             });
         });
 
+        //adicionei a criptografia, precisamos testar junto com o banco de dados da kassandra
 
         // Ajustando padding com base nos insets da janela
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
