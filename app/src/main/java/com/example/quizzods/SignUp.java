@@ -193,6 +193,7 @@ public class SignUp extends AppCompatActivity {
             });
         });
 
+        
         // Ajustando padding com base nos insets da janela
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
