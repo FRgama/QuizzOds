@@ -1,4 +1,4 @@
-ODS 1 - Erradicação da Pobreza
+ODS 1 - Erradicação da Pobreza!
 Pergunta: Qual é o objetivo principal do ODS 1?
 a) Garantir igualdade de gênero em todas as esferas
 b) Erradicar a pobreza em todas as suas formas e em todos os lugares
