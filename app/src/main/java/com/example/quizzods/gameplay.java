@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -18,6 +19,10 @@ public class gameplay extends AppCompatActivity {
     private RadioButton questao1, questao2, questao3, questao4;
     private Button enviarResposta;
     private int idRespostaCorreta = R.id.questao1;
+    private TextView questaoNumero;
+    private TextView vidasRestantes;
+    private int numeroQuestao = 1;
+    private int vidas = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,9 @@ public class gameplay extends AppCompatActivity {
         questao2 = findViewById(R.id.questao2);
         questao3 = findViewById(R.id.questao3);
         questao4 = findViewById(R.id.questao4);
+        vidasRestantes = findViewById(R.id.vidasRestantes);
+
+        questaoNumero = findViewById(R.id.questaoNumero);
         enviarResposta = findViewById(R.id.btnEnviarResposta);
 
 
@@ -41,10 +49,17 @@ public class gameplay extends AppCompatActivity {
             if (idRespostaSelecionada == idRespostaCorreta) {
                 Toast.makeText(this, "Resposta Correta!",Toast.LENGTH_SHORT).show();
                 findViewById(idRespostaSelecionada).setBackgroundColor(Color.GREEN);
+                numeroQuestao  = numeroQuestao+1;
+                questaoNumero.setText("Questão " + numeroQuestao);
+
+
+
             }
             else {
                 Toast.makeText(this, "Resposta Incorreta!",Toast.LENGTH_SHORT).show();
                 findViewById(idRespostaSelecionada).setBackgroundColor(Color.RED);
+                vidas -=1;
+                vidasRestantes.setText("Vidas Restantes: " + vidas);
             }
 
         });
