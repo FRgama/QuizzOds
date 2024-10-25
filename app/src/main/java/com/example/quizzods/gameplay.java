@@ -45,7 +45,7 @@ public class gameplay extends AppCompatActivity {
 
         enviarResposta.setOnClickListener(v -> {
             retornarCores();
-            int idRespostaSelecionada = divQuestoes.getCheckedRadioButtonId();
+            int idRespostaSelecionada = divQuestoes.getCheckedRadioButtonId(); //caso a resposta esteja correta
             if (idRespostaSelecionada == idRespostaCorreta) {
                 Toast.makeText(this, "Resposta Correta!",Toast.LENGTH_SHORT).show();
                 findViewById(idRespostaSelecionada).setBackgroundColor(Color.GREEN);
