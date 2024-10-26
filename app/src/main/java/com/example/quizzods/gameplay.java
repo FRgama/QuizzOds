@@ -14,6 +14,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.List;
+import java.util.Arrays;
+
 public class gameplay extends AppCompatActivity {
     private RadioGroup divQuestoes;
     private RadioButton questao1, questao2, questao3, questao4;
@@ -21,8 +24,23 @@ public class gameplay extends AppCompatActivity {
     private int idRespostaCorreta = R.id.questao1;
     private TextView questaoNumero;
     private TextView vidasRestantes;
+
+
+
+    private List<Questao> questoes = Arrays.asList(
+            new Questao("O ODS 6 está relacionado a qual temática?",
+                    Arrays.asList("Água potável e saneamento",
+                            "Igualdade de gênero",
+                            "Energia limpa e acessível",
+                            "Combate à fome e desnutrição"),
+                    1)
+    );
+
     private int numeroQuestao = 1;
     private int vidas = 3;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +69,7 @@ public class gameplay extends AppCompatActivity {
                 findViewById(idRespostaSelecionada).setBackgroundColor(Color.GREEN);
                 numeroQuestao  = numeroQuestao+1;
                 questaoNumero.setText("Questão " + numeroQuestao);
+                enviarResposta.setEnabled(false);
 
 
 
