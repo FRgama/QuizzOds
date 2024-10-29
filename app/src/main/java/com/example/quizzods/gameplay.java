@@ -47,6 +47,68 @@ public class gameplay extends AppCompatActivity {
                             "Trabalho decente e crescimento econômico",
                             "Paz, justiça e instituições eficazes"),
                     1)
+
+        new Questao("Qual ODS visa erradicar a pobreza em todas as suas formas?",
+                    Arrays.asList("ODS 2",
+                            "ODS 1",
+                            "ODS 3",
+                            "ODS 4"),
+                    1)
+
+     new Questao("O ODS 1 visa acabar com a pobreza em todas as suas formas em todos os lugares. Qual das seguintes metas específicas está diretamente relacionada a esse objetivo?",
+                    Arrays.asList("Reduzir a proporção de homens, mulheres e crianças vivendo na pobreza extrema.",
+                            "Garantir acesso a serviços de saúde de qualidade.",
+                            "Promover a educação inclusiva.",
+                            "Aumentar a eficiência energética."),
+                 0)
+     new Questao("O ODS 5 busca alcançar a igualdade de gênero e empoderar todas as mulheres e meninas. Qual das alternativas a seguir descreve uma das metas desse ODS?",
+                    Arrays.asList("Aumentar a participação das mulheres em cargos de liderança na política.",
+                            "Garantir acesso à educação primária universal.",
+                            "Reduzir a desigualdade econômica entre países.",
+                            " Proteger os ecossistemas marinhos."),
+                 0)
+     new Questao("O ODS 7 visa garantir o acesso a energia acessível, confiável, sustentável e moderna para todos. Qual das seguintes estratégias é uma prioridade deste ODS?",
+                    Arrays.asList("Promover a agricultura sustentável.",
+                            "Aumentar a eficiência energética em todos os setores.",
+                            "Reduzir o consumo de água.",
+                            "Proteger a biodiversidade terrestre."),
+                 1)
+     new Questao("O ODS 10 trata da redução das desigualdades dentro e entre os países. Qual das alternativas a seguir representa um desafio específico abordado por esse ODS?",
+                    Arrays.asList("Acesso igualitário à educação de qualidade.",
+                            "Garantir saúde acessível a todos.",
+                            "Impedir a discriminação em todas as suas formas.",
+                            "Promover a sustentabilidade urbana."),
+                 2)
+     new Questao("O ODS 12 visa garantir padrões de consumo e produção sustentáveis. Qual das seguintes iniciativas poderia ser uma forma de promover esse objetivo?",
+                    Arrays.asList("Aumentar a produção agrícola sem restrições.",
+                            "Promover a redução de resíduos e o reaproveitamento de materiais.",
+                            "Incentivar a exploração de combustíveis fósseis.",
+                            "Expandir áreas urbanas sem planejamento."),
+                 1)
+     new Questao("O ODS 13 foca na ação contra a mudança global do clima. Qual das alternativas abaixo é uma das metas desse objetivo?",
+                    Arrays.asList("Aumentar as emissões de gases de efeito estufa.",
+                            "Incentivar a produção de plásticos não biodegradáveis.",
+                            "Expandir a agricultura em áreas de risco climático.",
+                            "Integrar medidas relativas à mudança do clima nas políticas nacionais"),
+                 3)
+     new Questao("O ODS 14 visa conservar e usar de forma sustentável os oceanos, os mares e os recursos marinhos. Qual das opções a seguir é uma meta importante desse ODS?",
+                    Arrays.asList("Aumentar a captura de peixes em áreas protegidas.",
+                            "Proteger ecossistemas marinhos e costeiros.",
+                            "Incentivar a poluição marinha.",
+                            "Expandir a exploração mineral no fundo do mar."),
+                 1)
+     new Questao("O ODS 15 se concentra na proteção, restauração e promoção do uso sustentável dos ecossistemas terrestres. Qual das seguintes ações é uma prioridade desse ODS?",
+                    Arrays.asList("Promover a gestão sustentável das florestas.",
+                            "Aumentar o desmatamento para a agricultura.",
+                            "Incentivar a urbanização descontrolada.",
+                            "Aumentar a poluição do solo."),
+                 0)
+     new Questao("O ODS 16 busca promover sociedades pacíficas e inclusivas. Qual das opções a seguir é um dos objetivos desse ODS?",
+                    Arrays.asList("Aumentar a corrupção em instituições governamentais.",
+                            "Promover o estado de direito em nível nacional e internacional.",
+                            "Incentivar a exclusão social.",
+                            "Reduzir a liberdade de expressão."),
+                 1)
             // Adicione outras questões conforme necessário
     );
 
