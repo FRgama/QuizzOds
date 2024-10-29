@@ -39,7 +39,14 @@ public class gameplay extends AppCompatActivity {
                                 "Educação de qualidade",
                                 "Igualdade de gênero",
                                 "Ação contra a mudança global do clima"),
-                    2)
+                    2),
+
+            new Questao("O ODS 4 está relacionado a qual temática?",
+                    Arrays.asList("Educação de qualidade",
+                            "Redução das desigualdades",
+                            "Trabalho decente e crescimento econômico",
+                            "Paz, justiça e instituições eficazes"),
+                    1)
             // Adicione outras questões conforme necessário
     );
 
